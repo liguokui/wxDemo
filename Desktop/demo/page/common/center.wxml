@@ -1,0 +1,3 @@
+<template name="center">
+<view class="">11--{{ddd}}</view>
+</template>
