@@ -26,5 +26,5 @@
     </view>
   </view>
 
-  <template is="foot" />
+  <template is="foot" data="{{footdata:'footdata'}}"/>
 </view>
