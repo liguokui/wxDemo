@@ -12,6 +12,9 @@
         longitude="{{longitude}}"
         markers="{{markers}}"
         covers="{{covers}}"
+        polyline="{{polyline}}"
+        controls="{{controls}}"
+        circles="{{circles}}"
         >
       </map>
     </view>

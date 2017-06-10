@@ -49,6 +49,7 @@ Page({
     }
   },
   setStorage: function () {
+    console.log("sss")
     var key = this.data.key
     var data = this.data.data
     if (key.length === 0) {
@@ -60,13 +61,22 @@ Page({
         'dialog.content': 'key 不能为空'
       })
     } else {
-      wx.setStorageSync(key, data)
-      this.setData({
-        key: key,
-        data: data,
-        'dialog.hidden': false,
-        'dialog.title': '存储数据成功'
-      })
+      if (data===""){
+         this.setData({
+           key:key,
+           data:data,
+           'dialog.hidden':false,
+           'dialog.title':'value 不能为空'
+         })
+      }else{
+        wx.setStorageSync(key, data)
+        this.setData({
+          key: key,
+          data: data,
+          'dialog.hidden': false,
+          'dialog.title': '存储数据成功'
+        })
+      } 
     }
   },
   clearStorage: function () {

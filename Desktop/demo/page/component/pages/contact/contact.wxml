@@ -1,0 +1,19 @@
+<!--contact.wxml-->
+<text>客服消息接口</text>
+<view class="index">
+ <contact-button 
+  type="default-drak" 
+  size="20"
+  session-from="weapp">
+</contact-button>
+</view>
+<view class="index">
+<button bindtap="btn">fff
+</button>
+</view>
+<view class="">
+{{site.name}}---{{site.address}}---{{site.latitude}}---{{site.longitude}}
+</view>
+ <modal title="{{dialog.title}}" hidden="{{dialog.hidden}}" no-cancel bindconfirm="confirm">{{dialog.content}}</modal>
+
+ <button bindtap="getLocation">获取地理位置</button>

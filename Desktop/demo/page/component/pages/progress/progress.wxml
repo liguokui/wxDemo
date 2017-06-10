@@ -21,10 +21,10 @@
       </view>
 
       <view class="progress-box">
-        <progress percent="80" color="#10AEFF" active stroke-width="3" />
+        <progress percent="80" active stroke-width="1"  activeColor='#10AEFF'  backgroundColor='red'/>
       </view>
     </view>
   </view>
 
-  <template is="foot" data="{{footdata:'footdata'}}"/>
+  <template is="foot" data="{{footdata}}"/>
 </view>

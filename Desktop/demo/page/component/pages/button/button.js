@@ -6,8 +6,11 @@ var pageObject = {
     warnSize: 'default',
     disabled: false,
     plain: false,
-    loading: false
+    loading: false,
+
+    title:"按钮"
   },
+  
   setDisabled: function(e) {
     this.setData({
       disabled: !this.data.disabled

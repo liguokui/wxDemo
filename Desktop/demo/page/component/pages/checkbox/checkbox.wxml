@@ -11,7 +11,7 @@
         <checkbox value="cb" checked="true"/>选中
       </label>
       <label class="checkbox">
-        <checkbox value="cb" />未选中
+        <checkbox value="cb" color="red" />未选中
       </label>
     </view>
 

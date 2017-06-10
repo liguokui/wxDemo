@@ -1,6 +1,10 @@
 <import src="../../../common/head.wxml" />
 <import src="../../../common/foot.wxml" />
-
+ <view >{{tt}}</view>
 <view class="container">
-  <template is="head" data="{{title: '新建的页面'}}"/>
+  <!--<template is="head" data="{{title: '新建的页面'}}"/>-->
+   <!--<template is="head" data="{{title}}"/>-->
+   <template is="head" data="{{title:'新建立的页面：传入值：title='+title+'  tt='+tt}}"></template>
+   <navigator  open-type="navigateBack" delta="3">back</navigator>
 </view>
+
